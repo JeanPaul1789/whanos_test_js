@@ -15,10 +15,11 @@ spec:
         service: web
     spec:
       containers:
+        - name: whanos-name
           image: whanos-img
-          name: simple-blog
           ports:
             - containerPort: 3000
+          imagePullPolicy: Always
           resources:
             requests:
               cpu: 100m
