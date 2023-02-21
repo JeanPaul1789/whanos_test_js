@@ -15,10 +15,10 @@ spec:
         service: web
     spec:
       containers:
-          image: europe-west9-docker.pkg.dev/whanos-language:latest
+          image: whanos-img
           name: simple-blog
           ports:
-            - containerPort: 5173
+            - containerPort: 3000
           resources:
             requests:
               cpu: 100m
